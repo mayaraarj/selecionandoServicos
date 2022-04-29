@@ -1,32 +1,37 @@
-Algoritmo "selecionando serviços"
-// O que o programa faz: Pede que o usuário selecione serviços que quer consumir em um salão de beleza
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 29/04/2022
 Var
 // Seção de Declarações das variáveis 
 opcaoMenu: caracter
 totalConta: real
 
-
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-totalConta <-0
+totalConta <- 0
 
 repita
         Escreval ("Por favor, selecione os serviços desejados: ")
-        Escreval ("1- Manicure ")
-        Escreval ("2 - Pedicure ")
-        Escreval ("3 - Lavagem de cabelo e escova: ")
+        Escreval ("1- Manicure")
+        Escreval ("2 - Pedicure")
+        Escreval ("3 - Lavagem de cabelo e escova")
         Escreval ("4 - Sair ")
         leia(opcaoMenu)
 
-        se opcaoMenu = 1 entao
+        se opcaoMenu = "1" entao
         totalConta <- totalConta +30
+        Escreval ("Você solicitou o serviço de manicure. Sua conta até agora é de R$", totalConta," reais")
         senao
-        se opcaoMenu = 2 entao
+        se opcaoMenu = "2" entao
         totalConta <- totalConta +40
+        Escreval ("Você solicitou o serviço de pedicure. Sua conta até agora é de R$", totalConta," reais")
         senao
-        se opcaoMenu = 3 entao
+        se opcaoMenu = "3" entao
         totalConta <- totalConta +50
+        Escreval ("Você solicitou o serviço de lavagem de cabelo e escova. Sua conta até agora é de R$", totalConta," reais")
         fimse
         fimse
         fimse
@@ -35,5 +40,6 @@ repita
 limpatela
 ate opcaoMenu = "4"
 Escreval ("O total da sua conta é de R$", totalConta)
+
 
 Fimalgoritmo
